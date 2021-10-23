@@ -87,8 +87,16 @@ main{
     margin: auto;
     
 }
-main h2, h3{
+main h2{
+    color: #666 ;
+    text-align: center;
+    font-size: 30px;
+    
+}
+main h3{
     color:#666 ;
+    text-align: left;
+    font-size: 30px;
 }
 main .items{
     margin: 10px;
