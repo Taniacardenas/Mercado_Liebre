@@ -68,7 +68,7 @@
                 </div>
 
                 <div class="control-form">
-                    <label for="email">Email:</label>
+                    <label for="email">E-mail:</label>
                     <input type="email" name="email" id="email" class="barra" placeholder="correo@dominio.com" required>
                 </div>
                 <div class="control-form">
@@ -79,55 +79,63 @@
                     <label for="domicilio">Domicilio:</label>
                     <input type="text" name="domicilio" id="domicilio" class="barra" placeholder="Ingrese su Domicilio">
                 </div>
+            </div>
+            <div class="column-dos">
                 <div class="control-form">
                     <label for="foto">Subir Foto de Usuario: </label>
                     <input type="file" name="foto" id="foto" accept=".jpg, .png, .jpeg">
                 </div>
-            </div>
-            <div class="column">
                 <div class="control-form">
                     <label for="perfil">Perfil de Usuario:</label>
                     <div class="select">
-                        <div class="union"><input type="radio" name="perfil" id="perfil1" value="comprador"> Comprador</div>
-                        <div class="union"><input type="radio" name="perfil" id="perfil2" value="vendedor"> Vendedor</div>
+                        <div class="radio"><input type="radio" name="perfil" id="perfil1" value="comprador"> Comprador
+                        </div>
+                        <div class="radio"><input type="radio" name="perfil" id="perfil2" value="vendedor"> Vendedor
+                        </div>
                     </div>
                 </div>
                 <div class="control-form">
                     <label for="categorias">Categorias de Interes:</label>
                     <div class="select">
-                        <div class="union"><input type="checkbox" name="categorias" id="categorias1" class="select" value="electro">
+                        <div class="union"><input type="checkbox" name="categorias" id="categorias1" class="select"
+                                value="electro">
                             Electro</div>
-                        <div class="union"><input type="checkbox" name="categorias" id="categorias2" class="select" value="moda">
+                        <div class="union"><input type="checkbox" name="categorias" id="categorias2" class="select"
+                                value="moda">
                             Moda</div>
-                        <div class="union"><input type="checkbox" name="categorias" id="categorias3" class="select" value="hogar">
+                        <div class="union"><input type="checkbox" name="categorias" id="categorias3" class="select"
+                                value="hogar">
                             Hogar</div>
                         <div class="union"><input type="checkbox" name="categorias" id="categorias4" class="select"
                                 value="jugueteria"> Juguetería</div>
-                        <div class="union"><input type="checkbox" name="categorias" id="categorias5" class="select" value="v-sana">
+                        <div class="union"><input type="checkbox" name="categorias" id="categorias5" class="select"
+                                value="v-sana">
                             Vida-sana</div>
+                    </div>
+                </div>
+                <div class="contraseña">
+                    <div class="control-form">
+                        <label for="password">Contraseña:</label>
+                        <input id="password" type="password" name="password" class="barra-c"
+                            placeholder="Ingrese Contraseña" minlength="7" maxlength="12" required>
+                    </div>
+                    <div class="control-form">
+                        <label for="confirm-password">Confirmar Contraseña:</label>
+                        <input id="confirm-password" type="password" class="barra-c" name="confirm-password"
+                            placeholder="Confirme Contraseña" minlength="7" maxlength="12" required>
+                    </div>
+                </div>
+
+                <div class="control-form">
+                    <div class="content-buttoms">
+                        <input type="submit" class="button" value="Enviar">
+                        <input type="reset" class="button" value="Borrar">
                     </div>
                 </div>
             </div>
 
-            <div class="contraseñas">
-                <div class="control-form">
-                    <label for="password">Contraseña:</label>
-                    <input id="password" type="password" name="password" class="barra" placeholder="Ingrese Contraseña"
-                        minlength="7" maxlength="12" required>
-                </div>
-                <div class="control-form">
-                    <label for="confirm-password">Confirmar Contraseña:</label>
-                    <input id="confirm-password" type="password" class="barra" name="confirm-password"
-                        placeholder="Confirme Contraseña" minlength="7" maxlength="12" required>
-                </div>
-            </div>
 
-            <div class="content-buttoms">
-                <input type="submit" class="button" value="Enviar">
-                <input type="reset" class="button" value="Borrar">
-            </div>
 
-           
 
         </form>
 

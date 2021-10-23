@@ -1,8 +1,8 @@
 const express = require ('express')
 const path = require('path')
 const app = express()
-//const port = process.env.PORT || 3000
-//app.listen(port,()=>console.log('listen in port '))
+const port = process.env.PORT || 3000
+
 
 app.use(express.static(path.resolve(__dirname,'./public')));
 
@@ -19,4 +19,4 @@ app.get('/login',(req,res)=>{
 })
 
 
-app.listen(4000,()=>console.log('corrriendo el servidor en el puerto 4000'))
+app.listen(port, () => console.log(`Server in port ${port}`));

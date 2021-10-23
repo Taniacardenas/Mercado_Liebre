@@ -39,6 +39,7 @@ header img#logo{
 }
 header .bar-search #Buscar{
     width:100%;
+    text-align: center;
     
 }
 header .top-header p{
@@ -169,14 +170,14 @@ footer .section h4, .section p, .copyright{
 }
 /* pagina de registro y login*/
 main.register , main.login {
-    border: 1px solid black;
+    background-color: #ebebeb;;;
     margin-top: 15px;
     padding: 5px;
     box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
     border-radius: 10px;   
 }
 main .form-register{
-    text-align: left;
+    text-align: center;
 }
 main  .content-buttoms{
     text-align: center;
@@ -184,8 +185,8 @@ main  .content-buttoms{
 }
 main .content-buttoms .button{
     width: 30%;
-    border-radius: 5px;
-    background-color: #1259c3;
+    border-radius: 2px;
+    background-color: #03264C;
     color: white;
 }
 main .control-form{
@@ -196,26 +197,35 @@ main .control-form label{
     display: block;
     font-weight: bold;
     padding-bottom: 5px;
+    font-style: oblique;
 }
 main .control-form .barra{
     border-radius: 5px;
-    width: 100%;
+    width: 70%;
+    height: 30px;
+    text-align: center;
 }
 main.login .control-form .barra{
     border-radius: 5px;
-    width: 50%;
+    width: 70%;
+    height: 30px;
     
 }
 main .control-form .select{
     text-align: center;
-    display: flex;
-    justify-content: space-evenly;   
+
+
+}
+main .control-form .select .radio{
+    display: block;
+
 }
 main .control-form .select .union{
+    text-align: center;
     padding: 5px;
 }
 main .control-form #foto, #fecha{
-    width: 100%;
+    width: 70%;
 }
 
 
@@ -310,6 +320,11 @@ main .control-form #foto, #fecha{
         flex-wrap: wrap;
         max-width: 100vw;
     }
+    img.banner{
+        width: 100vw;
+        
+    }
+    
     main .items{
         width: 22%;
         box-shadow:none ;    
@@ -336,38 +351,77 @@ main .control-form #foto, #fecha{
         display: none;
         
     }
+    main.register .form-register{
+        display: flex;
+        justify-content: space-around;
+    }
+
     main.register .form-register .column{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         padding-bottom: 10px;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    main.register .form-register .column-dos{
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+        width: 50%;  
     }
     main.register .form-register .column .control-form{
-        width: 40%;
+        width: 100%;
     }
-    main.register .form-register .column label{
+    main.register .form-register .column-dos .control-form, .contraseña{
+        width: 100%;
+        
+    }
+    main.register .form-register .column-dos .control-form label{
+        width: 100%;
+    }
+    main.register .form-register .column-dos .control-form input{
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+    }
+    main.register .form-register .column-dos .control-form .select{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+       
+    }
+    main.register .contraseña .control-form .barra-c{
+        width: 50%;
+        height: 60%;
+        border-radius: 5px;
         text-align: center;
     }
-    main.register .form-register .column .select{
-        display:flex;
-        flex-wrap: wrap;
-        padding: 10px;
+    main.register .control-form .content-buttoms .button{
+        margin: 5px;
+        border-radius: 5px;
+        height: 35px;
+        
     }
-    main.register .form-register .contraseñas{
-        display:block;
-        text-align: center;
-    }
-
+   
+    
+    
+    
     main.register .form-register .contraseñas .barra{
         width: 30%;
     }
 
     
+
+
+
+
+
     main .description .info .off{
         width: 70%;
     }
     main.login  .content-buttoms .button:hover{
-        background-color: #0022AA;
+        background-color:#666;;
     }
     
 
